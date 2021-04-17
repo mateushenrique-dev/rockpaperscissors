@@ -1,6 +1,6 @@
 # Frontend Mentor - Rock, Paper, Scissors solution
 
-This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -24,11 +24,10 @@ Users should be able to:
 
 ![](design/desktop-preview.jpg)
 
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/rock-paper-scissor-game-Eanip8lDl/report)
+- Live Site URL: [Add live site URL here](https://rockpaperscissors-mateushenrique-dev.netlify.app)
 
 ### Built with
 
@@ -37,9 +36,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Add your name here](https://mateushenriquedev.ml)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/mateushenrique-dev)
