@@ -31,21 +31,29 @@ function toggleRules() {
 }
 
 function play(you) {
+  document.querySelector('.house').classList.remove('winner')
+  document.querySelector('.you').classList.remove('winner')
+  yourpick.innerHTML = ''
+  yourpick.id = ''
+  enemypick.id = ''
+  enemypick.innerHTML = ''
+
   spinsEnemy = spins[chooseEnemy()]
   playField.classList.toggle('remove')
   yourpick.innerHTML = you.innerHTML
   yourpick.id = (`${you.id}`)
 
-  enemypick.innerHTML = spinsEnemy.innerHTML
-  enemypick.id = (`${spinsEnemy.id}`)
-
-  whowinField.querySelector('h2').innerText = whoWin(yourpick, enemypick)
-  whowinField.classList.toggle('remove')
-  whowinField.querySelector('button').addEventListener('click', () => {
+  setTimeout(() => {
+    enemypick.innerHTML = spinsEnemy.innerHTML
+    enemypick.id = (`${spinsEnemy.id}`)
+    whowinField.querySelector('h2').innerText = whoWin(yourpick, enemypick)
+    whowinField.classList.toggle('remove')
+    whowinField.querySelector('button').addEventListener('click', () => {
     playField.classList.add('remove')
     rps.classList.remove('remove')
     whowinField.classList.add('remove')
   })
+  }, 2000)
 }
 
 function whoWin(you, enemy) {
@@ -53,6 +61,7 @@ function whoWin(you, enemy) {
     if(+scoreValue.innerText > 0) {
       scoreValue.innerText = +scoreValue.innerText - 1
     }
+    document.querySelector('.house').classList.add('winner')
     return 'You loose'
   } 
   else if (you.id === enemy.id) {
@@ -60,6 +69,7 @@ function whoWin(you, enemy) {
   }
   else {
     scoreValue.innerText = +scoreValue.innerText + 1
+    document.querySelector('.you').classList.add('winner')
     return 'You win'
   }
 }
