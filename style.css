@@ -45,7 +45,7 @@ body {
 .score .points {
   display: grid;
   justify-items: center;
-  grid-template-rows: 14px;
+  grid-template-rows: 30px;
   align-content: center;
   width: 40%;
   height: 100%;
@@ -58,6 +58,7 @@ body {
 .score .points span {
   display: block;
   text-align: center;
+  align-self: end;
 }
 
 .score .points span:first-child {
@@ -225,11 +226,6 @@ body {
   width: 80px !important;
 }
 
-.playing .winner div {
-  -webkit-box-shadow: 5px 5px 50px 20px #000000; 
-  box-shadow: 5px 5px 50px 20px hsl(237, 49%, 15%) !important;
-}
-
 .playing .house {
   grid-column: 3;
 }
@@ -278,8 +274,19 @@ body {
 /* Responsive */
 
 @media (max-width: 700px) {
-  .game {
-    margin-top: -40px;
+
+  .rules {
+    display: grid;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .rules.ativo {
+    display: none;
+  }
+
+  #btn-rules {
+    display: none;
   }
 
   .score img {
@@ -297,8 +304,8 @@ body {
   #paper,
   #scissors,
   #rock {
-    width: 80px;
-    height: 80px;
+    width: 80px !important;
+    height: 80px !important;
   }
 
   #paper img,
@@ -316,7 +323,7 @@ body {
     row-gap: 30px;
   }
 
-  .playing > div > div {
+  .game .playing > div > div {
     width: 100px !important;
     height: 100px !important;
   }
