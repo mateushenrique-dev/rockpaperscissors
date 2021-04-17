@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <main class="game">
+      <section class="score">
+        <div><img src="images/logo.svg" alt="Rock Paper Scissors Logo" /></div>
+        <div class="points">
+          <span>Score</span>
+          <span>0</span>
+        </div>
+      </section>
+      <section class="rps">
+        <div id="paper"><img src="images/icon-paper.svg" alt="Paper" /></div>
+        <div id="scissors">
+          <img src="images/icon-scissors.svg" alt="Scissors" />
+        </div>
+        <div id="rock"><img src="images/icon-rock.svg" alt="Rock" /></div>
+      </section>
+      <section class="playing remove">
+        <div class="you">
+          <h2>You Picked</h2>
+          <div class="you-picked"></div>
+        </div>
+        <div class="whowin remove">
+          <h2>You Loose</h2>
+          <button>Play Again</button>
+        </div>
+        <div class="house winner">
+          <h2>The House Picked</h2>
+          <div class="enemy-picked"></div>
+        </div>
+      </section>
+    </main>
+    <button id="btn-rules">Rules</button>
+    <section class="rules">
+      <div>
+        <h1>Rules</h1>
+        <div id="rules-close">
+          <img src="images/icon-close.svg" alt="Close Icon" />
+        </div>
+      </div>
+      <img src="images/image-rules.svg" alt="Rules" />
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
