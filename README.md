@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/rock-paper-scissor-game-Eanip8lDl/report)
-- Live Site URL: [Add live site URL here](https://rockpaperscissors-mateushenrique-dev.netlify.app)
+- Solution URL: [https://www.frontendmentor.io/solutions/rock-paper-scissor-game-Eanip8lDl/report](https://www.frontendmentor.io/solutions/rock-paper-scissor-game-Eanip8lDl/report)
+- Live Site URL: [https://rockpaperscissors-mateushenrique-dev.netlify.app](https://rockpaperscissors-mateushenrique-dev.netlify.app)
 
 ### Built with
 
